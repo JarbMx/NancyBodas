@@ -1,0 +1,89 @@
+/* =========================
+   Base / helpers
+========================= */
+
+:root {
+  /* Paleta teal (la de tu imagen) */
+  --primary: #0DA797;          /* teal principal */
+  --secondary: #7FBAB4;        /* teal suave */
+  --accent: #9E7F5E;           /* dorado/bronce */
+  --bg-light: #F9DEB2;         /* crema */
+  --bg-dark: #0C354D;          /* azul profundo */
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+/* Body mínimo para móviles (iPhone safe) */
+body {
+  min-height: max(884px, 100dvh);
+}
+
+/* (Opcional) Fondo patrón si lo usas en alguna sección con class="bg-pattern" */
+.bg-pattern {
+  background-image: url("../Img/1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =========================
+   Ajustes visuales PRO
+   (sin romper Tailwind)
+========================= */
+
+/* Suaviza el scroll en móviles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejor rendering de tipografías */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Pequeño ajuste para que el hero no se vea “cortado” en algunos móviles */
+@media (max-width: 420px) {
+  .h-\[420px\] {
+    height: 400px !important;
+  }
+}
+
+/* Ajuste opcional para que la “burbuja” de fecha se vea más premium */
+.rounded-full.shadow-lg {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Botón principal: que se sienta consistente */
+button.w-full.bg-primary,
+a.bg-primary {
+  box-shadow: 0 14px 35px rgba(13, 167, 151, 0.25);
+}
+
+/* Hover suave para botones */
+button.w-full.bg-primary:hover,
+a.bg-primary:hover {
+  filter: brightness(0.98);
+}
+
+/* Cards: borde más fino y elegante */
+.rounded-3xl.border {
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+/* Dark mode: mejora contraste de cards */
+.dark .rounded-3xl.border {
+  border-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+/* (Opcional) Quita el “resaltado azul” feo al tocar en iOS */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
