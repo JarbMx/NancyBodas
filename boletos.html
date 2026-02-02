@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ecec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102222",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .serif-text {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-white min-h-screen">
+<!-- TopAppBar -->
+<div class="relative flex h-auto w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="text-slate-800 dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center serif-text"> Boletos</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-slate-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-4 py-2">
+<!-- Family Header Card -->
+<div class="p-0 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-2xl bg-white dark:bg-[#193333] border border-slate-200 dark:border-white/5 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-[7/9] bg-cover" data-alt="Elegant wedding venue with floral decorations and warm lighting" style='background-image: url("Img/3.jpeg");'>
+</div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-6 px-6">
+<p class="text-primary text-sm font-medium uppercase tracking-widest">Boda Nancy &amp; Salvador 2026</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-tight serif-text">Familia Josefina Caballero</p>
+<div class="flex items-center gap-3 justify-between mt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">confirmation_number</span>
+<p class="text-slate-500 dark:text-[#92c9c9] text-base font-normal leading-normal">12 Pases Totales</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-[#112222] text-sm font-bold leading-normal transition-transform active:scale-95">
+<span class="truncate">Ver Mapa</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Header -->
+<div class="flex items-center justify-between pt-8 pb-4">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] serif-text">Confirmar Integrantes</h3>
+<span class="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full font-bold">12 Invitados</span>
+</div>
+<!-- Guest List -->
+<div class="space-y-3">
+<!-- Guest Item: Juan -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Portrait of a smiling man in a suit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAI32qjhQljKZGm_YJlBvQ_pco7aO5TMIjxU5GC32KuEWl6STA4Mu8PD-CF_0kT7tZdjttk6-8AvjgLsAUSpm1nRB8xThi64FQd7SoLA5OxuIGzgcZ_aUvX-_txI4uVfLbvolk_sTLJcdMGb_8plvG3vE00BaWrJsKPs1DvyPDdr5m2M-AE3ZaK1W6Ckw0VeNfHHgOeEDACpT9TNGl1sUv1JAW4a6BW3Nr7uhBDm1LtrDhbGh6MlyLimLzxvoE_rwnrWWYyG54sZIbj");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Josefina Caballero</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Jefe de Mesa</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+
+
+</div>
+<!-- Guest Item: Maria -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Portrait of a elegant woman with dark hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAI32qjhQljKZGm_YJlBvQ_pco7aO5TMIjxU5GC32KuEWl6STA4Mu8PD-CF_0kT7tZdjttk6-8AvjgLsAUSpm1nRB8xThi64FQd7SoLA5OxuIGzgcZ_aUvX-_txI4uVfLbvolk_sTLJcdMGb_8plvG3vE00BaWrJsKPs1DvyPDdr5m2M-AE3ZaK1W6Ckw0VeNfHHgOeEDACpT9TNGl1sUv1JAW4a6BW3Nr7uhBDm1LtrDhbGh6MlyLimLzxvoE_rwnrWWYyG54sZIbj");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Ernesto Chavez</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitado</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+<!-- Guest Item: Carlos -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young man with glasses smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClRO4FaFhiVE3BY9dP90w2hQG3R91qrOA0PAPWFdQbXmWX3mfJ4TkX1C7vR_SC59iK-w1jEi1kAYDbVvLdzY4AC0uLCa9OcvuQtoUXhwbWs0mrxQqeHyuaLt5SbSvqbfxxeITWc1DDkzzNptcwKL1gGiBmsKg8o4eQLwIEXfbFzJQBtlJUDWikj0MvDnhdcFmRmoa9vekZpM5EdfmpOf-uvchRMfX03KfFoDqbgwF48M5y5mLNTKkoA_g0HJtQ0kKLhVZb17mTBoY1");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Angel Chavez</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitado</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Claudia</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitada</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Victor Chavez</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitado</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>  
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Monserrat Jarquin</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitada</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Salvador Chavez</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitado</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Enriqueta  Contreras</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitada</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Sr Albano Alvarado</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitado</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Daysi  Murillo </p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitada</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Isai Ramos</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitado</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Adriana Hernandez/p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitada</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+<!-- Guest Item: Sofia -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#193333]/50 border border-slate-100 dark:border-white/5 rounded-2xl px-4 min-h-[80px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 ring-2 ring-primary/30" data-alt="Young girl with braided hair" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRq3EGcfxehiFFW2jwpnEJyiQl6ZO6IuX-qReM9X5i5VyEIYNIC1tEEiNetlUZvxyjPbLI8IrptUrX9XGIkS1IeCEDeCD5oBugBqLwW_8xUYWYkPYlRlwq-_5kKqBtXTCRk6xYqZtLCKNlNS58IgRtk7X-6FYncYUl56oMzoFq4VO4H135w7gFUGrsAcVsPfT0OZ2GoYTJqYXtnfGH4tAo2sqmfD3NshYeBeiR1g0NDkqRGJ7qDhTb55uyFS5CPXhc-TjvH6H1hE3j");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-lg font-medium leading-normal serif-text">Alicia Ortiz</p>
+<p class="text-slate-500 dark:text-[#92c9c9] text-xs font-normal leading-normal uppercase tracking-wider">Invitada</p>
+</div>
+</div>
+<div class="shrink-0">
+  <label
+    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none
+           bg-slate-200 dark:bg-[#234848] p-0.5 transition-all duration-200
+           has-[input:checked]:bg-primary
+           has-[input:checked]:justify-end">
+
+    <div
+      class="h-full w-[27px] rounded-full bg-white transition-all duration-200"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;">
+    </div>
+
+  <input class="invisible absolute guest-checkbox" type="checkbox" />
+  </label>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<!-- Ticket Summary Card with QR -->
+<div class="mt-10 mb-20 bg-primary/10 rounded-3xl p-6 border-2 border-dashed border-primary/30 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<p class="text-primary text-sm font-bold uppercase tracking-widest mb-1">Boletos Confirmados</p>
+<h4 class="text-slate-900 dark:text-white text-2xl font-bold serif-text mb-6">
+  <span id="confirmedCount">0</span> de <span id="totalCount">12</span> Invitados
+</h4><!-- QR Code Placeholder -->
+<div class="bg-white p-4 rounded-2xl shadow-xl mb-4 group cursor-pointer">
+<div class="w-48 h-48 bg-slate-100 flex items-center justify-center rounded-lg border-2 border-slate-50 relative overflow-hidden">
+<div class="grid grid-cols-4 grid-rows-4 gap-1 w-full h-full p-2 opacity-80">
+<!-- Simulating QR appearance -->
+<div class="bg-slate-800 rounded-sm"></div><div class="bg-transparent"></div><div class="bg-slate-800 rounded-sm"></div><div class="bg-slate-800 rounded-sm"></div>
+<div class="bg-slate-800 rounded-sm"></div><div class="bg-slate-800 rounded-sm"></div><div class="bg-transparent"></div><div class="bg-slate-800 rounded-sm"></div>
+<div class="bg-transparent"></div><div class="bg-slate-800 rounded-sm"></div><div class="bg-slate-800 rounded-sm"></div><div class="bg-transparent"></div>
+<div class="bg-slate-800 rounded-sm"></div><div class="bg-transparent"></div><div class="bg-slate-800 rounded-sm"></div><div class="bg-slate-800 rounded-sm"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl">qr_code_2</span>
+</div>
+</div>
+</div>
+<p class="text-slate-500 dark:text-[#92c9c9] text-sm max-w-[200px] leading-relaxed">Presenta este código en la entrada de la recepción.</p>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light dark:via-background-dark to-transparent pt-8">
+  <button
+    type="button"
+    onclick="window.location.href='confirmacion.html'"
+    class="w-full bg-primary text-background-dark font-bold text-lg py-4 rounded-full shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-transform active:scale-95"
+  >
+    <span class="material-symbols-outlined">check_circle</span>
+    Confirmar Asistencia
+  </button>
+</div>
+
+</div>
+</div>
+</body>
+<script>
+  const checkboxes = document.querySelectorAll('.guest-checkbox');
+  const confirmedCountEl = document.getElementById('confirmedCount');
+  const totalCountEl = document.getElementById('totalCount');
+
+  totalCountEl.textContent = checkboxes.length;
+
+  function updateConfirmedCount() {
+    const confirmed = Array.from(checkboxes).filter(cb => cb.checked).length;
+    confirmedCountEl.textContent = confirmed;
+  }
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', updateConfirmedCount);
+  });
+
+  // Inicial
+  updateConfirmedCount();
+</script>
+
+
+
+</html>
